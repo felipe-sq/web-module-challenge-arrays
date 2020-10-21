@@ -164,9 +164,12 @@ Use the filterByWord function below to do the following:
 
 function filterByWord(copiedFlavors, flavor){
     const filteredFlavors = [];
-    if (copiedFlavors[0].includes(flavor) === true){
-        filteredFlavors.push(flavor);
-        return filteredFlavors;
+    for (let i = 0; i < copiedFlavors.length; i++){
+    if (copiedFlavors.includes(flavor) === true){
+            let newFlavors = copiedFlavors[];
+            filteredFlavors.push(newFlavors);
+            return filteredFlavors;
+        }
     }
 }
 
