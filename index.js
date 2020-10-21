@@ -166,8 +166,8 @@ function filterByWord(copiedFlavors, flavor){
     const filteredFlavors = [];
     for (let i = 0; i < copiedFlavors.length; i++){
     if (copiedFlavors.includes(flavor) === true){
-            let newFlavors = copiedFlavors[];
-            filteredFlavors.push(newFlavors);
+            copiedFlavors.indexOf(flavor);
+            filteredFlavors.push(flavor);
             return filteredFlavors;
         }
     }
