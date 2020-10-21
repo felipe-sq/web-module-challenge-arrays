@@ -165,12 +165,11 @@ Use the filterByWord function below to do the following:
 function filterByWord(copiedFlavors, flavor){
     const filteredFlavors = [];
     for (let i = 0; i < copiedFlavors.length; i++){
-    if (copiedFlavors.includes(flavor) === true){
-            copiedFlavors.indexOf(flavor);
-            filteredFlavors.push(flavor);
-            return filteredFlavors;
+        if (copiedFlavors[i].includes(flavor)){
+            filteredFlavors.push(copiedFlavors[i]);
         }
     }
+    return filteredFlavors;
 }
 
 
